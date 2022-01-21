@@ -306,10 +306,10 @@ def test():
     """Run about widget test"""
 
     from spyder.utils.qthelpers import qapplication
-    qapplication()
+    app = qapplication()
     abt = AboutDialog(None)
     abt.show()
-    sys.exit(abt.exec_())
+    sys.exit(app.exec_())
 
 
 if __name__ == '__main__':

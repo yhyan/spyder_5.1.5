@@ -149,7 +149,7 @@ def test():
     dlg = DependenciesDialog(None)
     dlg.set_data(dependencies.DEPENDENCIES)
     dlg.show()
-    sys.exit(dlg.exec_())
+    sys.exit(app.exec_())
 
 
 if __name__ == '__main__':
